@@ -25,7 +25,7 @@ Write a JavaScript program to get the current date.
     Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 */
 
-let dd =today.getDate();
+let dd = today.getDate();
 let mm = today.getMonth()+1;
 let yyyy = today.getFullYear();
 
@@ -61,7 +61,7 @@ console.log('--------------------');
 for( let year = 2014; year <= 2050; year++){
     const d = new Date(year, 0 , 1);
     if (d.getDay() === 0){
-        console.log('1st of Jan is a Sunday in: ' + year);
+        console.log(`1st of Jan is a Sunday in: ${year}`);
     }
 }
 console.log('--------------------');
@@ -69,5 +69,16 @@ console.log('--------------------');
 
 //----------------------------------------------------------------------------------------------
 /*
-
+Write a JavaScript program to calculate days left until next Christmas
 */
+
+today = new Date();
+//calculate xmas this year
+const xmas = new Date(today.getFullYear(), 11, 25);
+// if it's after xmas add one to the year
+if(today.getMonth() === 11 && today.getDate()>25){
+    xmas.setFullYear(xmas.getFullYear()+1)
+}
+// length of one day in milliseconds
+const one_day = 1000*60*60*24
+console.log(`${Math.ceil((xmas.getTime()-today.getTime())/(one_day))} days until Christmas`);
