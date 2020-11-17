@@ -68,11 +68,10 @@ const groceries = (arr) => {
   if (len <= 2) {
     console.log(Array.prototype.map.call(arr, (s) => s.item).join(" and "));
   } else {
-    // arr1 = arr;
-    // end = arr.pop();
-    // console.log(end);
-    // arr1 = Array.prototype.map.call(arr1, (s) => s.item).join(", ");
-    //console.log(arr1);
+      let arr1 = arr;
+      let end = arr.pop();
+      arr1 = Array.prototype.map.call(arr1, (s) => s.item).join(", ");
+      console.log(arr1 + " and " + end.item);
   }
 };
 
