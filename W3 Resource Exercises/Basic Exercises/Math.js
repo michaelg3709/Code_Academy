@@ -77,9 +77,13 @@ Write a JavaScript program to find a value which is nearest to 100 from two diff
 */
 
 const nearest = (num1, num2) => {
-
     return (100 - num1 > 100 - num2) ? num2 : num1;
-
 }
 
-console.log(nearest(10,20))
+// console.log(nearest(10,20))
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive
+*/
