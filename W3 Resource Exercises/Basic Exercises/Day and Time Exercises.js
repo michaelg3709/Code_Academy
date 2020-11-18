@@ -69,7 +69,7 @@ console.log('--------------------');
 
 //----------------------------------------------------------------------------------------------
 /*
-Write a JavaScript program to calculate days left until next Christmas
+Write a JavaScript program to calculate the days left until Christmas
 */
 
 today = new Date();

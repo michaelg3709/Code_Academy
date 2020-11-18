@@ -27,7 +27,13 @@ const multiple = (num) => {
  }
 }
 
-console.log(multiple(20));
-console.log(multiple(14));
-console.log(multiple(10));
-console.log(multiple(11));
+// console.log(multiple(20));
+// console.log(multiple(14));
+// console.log(multiple(10));
+// console.log(multiple(11));
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7.
+*/
