@@ -55,5 +55,31 @@ function numCheck (int1, int2) {
 
 //----------------------------------------------------------------------------------------------
 /*
-
+Write a JavaScript program to find the largest of three given integers.
 */
+
+const largestInt = (int1, int2, int3) => {
+    if (int1 > int2 && int1 > int3){
+        return int1;
+    } else if (int2 > int1 && int2 > int3) {
+        return int2;
+    } else if (int3 > int1 && int3 > int2){
+        return int3;
+    }
+}
+
+// console.log(largestInt(-200, 40 ,60));
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to find a value which is nearest to 100 from two different given integer values. 
+*/
+
+const nearest = (num1, num2) => {
+
+    return (100 - num1 > 100 - num2) ? num2 : num1;
+
+}
+
+console.log(nearest(10,20))
