@@ -54,9 +54,8 @@ const front_back = (str) => {
 
 //----------------------------------------------------------------------------------------------
 /*
-Write a JavaScript program to create a new string from a given string 
-taking the last 3 characters and added at both the front and back. 
-The string length must be 3 or more. 
+Write a JavaScript program to create a new string from a given string taking the last 3 
+characters added at both the front and back.  The string length must be 3 or more. 
 */
 
 const threeMore = (str) => {
@@ -71,7 +70,50 @@ const threeMore = (str) => {
 //console.log(threeMore('dave'));
 
 
+
 //----------------------------------------------------------------------------------------------
 /*
-
+Write a JavaScript program to check whether a string starts with 'Java' and false otherwise
 */
+
+const javaCheck = (str) => {
+    if (str.length < 4) {
+        return false;
+    }
+        frontStr = str.substring(0, 4).toLowerCase();
+        if (frontStr === 'java'){
+            return true;
+        } else {
+            return false;
+        }
+}
+
+// console.log(javaCheck("JavaScript"));
+// console.log(javaCheck("Java"));
+// console.log(javaCheck("Python"));
+
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to check whether a string "Script" presents at 5th (index 4) position 
+in a given string. If "Script" is in the string, return the string without "Script" 
+otherwise return the original one.
+*/
+
+const scriptStr = (str) => {
+    if (str.length < 6) {
+        return str;
+    }
+    let result_str = str;
+    
+    // does Script appear at index 4 (in first 10 letters)
+    if (str.substring(10, 4) == 'Script') {
+        // return string without 'Script'
+        result_str = str.substring(0, 4) + str.substring(10, str.length);
+      }
+    return result_str;
+}
+
+console.log(scriptStr('JavaScript'));
+console.log(scriptStr('CoffeeScript'))
