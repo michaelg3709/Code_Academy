@@ -115,5 +115,46 @@ const scriptStr = (str) => {
     return result_str;
 }
 
-console.log(scriptStr('JavaScript'));
-console.log(scriptStr('CoffeeScript'))
+// console.log(scriptStr('JavaScript'));
+// console.log(scriptStr('CoffeeScript'))
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a program to check whether a specified character exists within the 2nd to 4th position in a given string.
+*/
+
+const checkChar = (str, char) => {
+    for (i = 1; i < 4; i++){
+        if (str.charAt(i) === char){
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+// console.log(checkChar('Python', 'y'))
+// console.log(checkChar("JavaScript", "a"));
+// console.log(checkChar("Console", "o"));
+// console.log(checkChar("Console", "e"));
+// console.log(checkChar("JavaScript", "S"));
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to create new string with first 3 characters are in lower case from a given string. 
+If the string length is less than 3 convert all the characters in upper case.
+*/
+
+function firstThree (str){
+    newStr = str.substring(0,3);
+    if (str.length <= 3) {
+        return newStr.toUpperCase();
+    } else {
+        return newStr
+    }
+}
+
+// console.log(firstThree('alp'));
+// console.log(firstThree('check'));

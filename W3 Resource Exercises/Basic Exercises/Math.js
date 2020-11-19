@@ -87,3 +87,31 @@ const nearest = (num1, num2) => {
 /*
 Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive
 */
+
+const rangeOf = (num1, num2) => {
+    if (num1 >= 40 && num1 <= 60 || num1 >= 70 && num1 <= 100){
+        return true;
+    } else if (num2 >= 40 && num2 <= 60 || num2 >= 70 && num2 <= 100){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// console.log(rangeOf(70, 22))
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to check whether the last digit of the 3 given positive integers is same.
+*/
+
+const lastDigit = (int1, int2, int3) => {
+    if (int1 > 0 || int2 > 0 || int3 > 0){ 
+        return ((int1 % 10 === int2 % 10) && (int2 % 10 === int3 % 10) && (int3 % 10 === int1 % 10))
+    } else {
+        return `Enter a positive number`;
+    }
+}
+
+console.log(lastDigit(10, 20, 30))
