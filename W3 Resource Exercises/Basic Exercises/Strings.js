@@ -158,3 +158,5 @@ function firstThree (str){
 
 // console.log(firstThree('alp'));
 // console.log(firstThree('check'));
+
+

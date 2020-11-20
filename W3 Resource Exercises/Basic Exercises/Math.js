@@ -114,4 +114,21 @@ const lastDigit = (int1, int2, int3) => {
     }
 }
 
-console.log(lastDigit(10, 20, 30))
+// console.log(lastDigit(10, 20, 30))
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to check from two given integers whether one of them is 8 
+or their sum or difference is 8
+*/
+
+const sumCheck = (int1, int2) => {
+    sum = int1 + int2;
+    diff = int1 - int2;
+    return (sum === 8 || int1 === 8 || int2 === 8 || diff === 8)
+}
+
+console.log(sumCheck(3, 6));
+
+
