@@ -160,3 +160,31 @@ function firstThree (str){
 // console.log(firstThree('check'));
 
 
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to reverse a given string
+*/
+
+const reverse_String = (str) => {
+    return str.split("").reverse().join("");
+}
+
+// console.log(reverse_String('hello'))
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to replace every character in a given string 
+with the character following it in the alphabet. 
+*/
+
+const charNextLetter = (str) => {
+    let s = str.split("");
+    for (let i = 0; i < s; i++){
+        //Caesar cipher
+        switch
+    }
+
+}
+
+console.log(charNextLetter('hello'));
