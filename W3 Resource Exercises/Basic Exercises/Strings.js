@@ -219,3 +219,47 @@ const firstHalf = (str) => {
 //console.log(firstHalf('hello!'));
 
 
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to create a new string without the first and last character of a given string.
+*/
+
+const removeFirstLast = (str) => {
+    return str.substring(1, str.length-1);
+}
+
+//console.log(removeFirstLast('hello'));
+
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to concatenate two strings except their first character.
+*/
+
+const concatTwoStr = (str1, str2) => {
+    let newStr1 = str1.substring(1, str1.length);
+    let newStr2= str2.substring(1, str2.length)
+    return newStr1 + newStr2;
+}
+
+//console.log(concatTwoStr('hello', 'dave'));
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.
+*/
+
+function cityName (city) {
+    if (city.length >= 3 && ((city.substring(0, 3) === 'New') || (city.substring(0, 3) === 'Los'))){
+        return city;
+    } else {
+        return '-';
+    }
+}
+
+// console.log(cityName('New York'));
+// console.log(cityName('Los Angeles'));
+// console.log(cityName('Pitsburgh'));
