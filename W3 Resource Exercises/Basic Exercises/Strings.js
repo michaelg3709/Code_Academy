@@ -199,4 +199,23 @@ const charNextLetter = (str) => {
 
 }
 
-console.log(charNextLetter('hello'));
+//console.log(charNextLetter('hello'));
+
+
+
+//----------------------------------------------------------------------------------------------
+/*
+Write a JavaScript program to extract the first half of a string of even length.
+*/
+
+const firstHalf = (str) => {
+    if (str.length % 2 === 0) {
+        return halfStr = str.substring(0, str.length/2);
+    } else {
+        return "Enter a string of even length"
+    }
+}
+
+//console.log(firstHalf('hello!'));
+
+
