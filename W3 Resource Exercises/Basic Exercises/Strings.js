@@ -179,11 +179,23 @@ with the character following it in the alphabet.
 */
 
 const charNextLetter = (str) => {
-    let s = str.split("");
-    for (let i = 0; i < s; i++){
+    let letter = str.split("");
+    for (let i = 0; i < letter.length; i++){
         //Caesar cipher
-        switch
+        switch(letter[i]){
+            case ' ':
+            break;
+            case 'z':
+                letter[i] = 'a';
+            break;
+            case 'Z':
+                letter[i] = 'A';
+            break;
+            default:
+                letter[i] = String.fromCharCode(1 + letter[i].charCodeAt(0));
+        }
     }
+    return letter.join("");
 
 }
 
